@@ -1,0 +1,27 @@
+{
+  "name": "ssr-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kronos-training/ssr-react.git"
+  },
+  "keywords": [],
+  "author": "Vanessa M. Paco Ramos <vanessapr.85@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kronos-training/ssr-react/issues"
+  },
+  "homepage": "https://github.com/kronos-training/ssr-react#readme",
+  "dependencies": {
+    "next": "^5.1.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}
