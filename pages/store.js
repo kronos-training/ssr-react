@@ -4,7 +4,7 @@ import thunkMiddleware from 'redux-thunk';
 import data from '../data/data.json';
 
 // initial state
-const initialState = {
+const startState = {
   cards: []
 };
 
@@ -23,7 +23,22 @@ export const addItem = (item) => {
   };
 }
 
+// Reducers
+export const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case 'INITIALCARDS':
+      return {
+        cards: action.cards,
+      }
+    case 'ADD':
+      return {
+        ...state,
+        cards: [...state.cards, action.item]
+      }
+    default: return state
+  }
+}
 
-export const store = (initialState) => {
+export const store = (initialState = startState) => {
   return createStore(reducer, initialState, composeWithDevTools(applyMiddleware(thunkMiddleware)));
 }
