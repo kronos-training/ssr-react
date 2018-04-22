@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/kronos-training/ssr-react#readme",
   "dependencies": {
+    "@zeit/next-css": "0.0.7",
     "next": "^5.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
