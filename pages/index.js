@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import withRedux from 'next-redux-wrapper';
+import Link from 'next/link';
 import { initStore, initialCards, addItem } from './store';
 import './index.css';
 import data from '../data/data.json';
@@ -18,7 +19,9 @@ class Index extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src="/static/logo.png" className="static-logo" alt="logo" />
+          <Link href="/page2">
+            <img src="/static/logo.png" className="static-logo" alt="logo" />
+          </Link>
         </header>
         <div className="Grid">
           {
