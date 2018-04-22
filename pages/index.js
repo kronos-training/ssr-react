@@ -9,7 +9,6 @@ import Card from './Card';
 
 class Index extends Component {
   static async getInitialProps({ store }) {
-    console.log('store===', store);
     store.dispatch(initialCards());
   }
 
